@@ -6,7 +6,7 @@ level_map: list[str] = [
     '                            ',
     '     noop                   ',
     '                            ',
-    'op           noop        P   ',
+    'op  P        noop           ',
     '                            ',
     'bbbbbbc    abbc   ac  abc   ',
     'eeeeeef   aheejc  df  dejc  ']

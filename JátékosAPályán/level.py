@@ -28,25 +28,25 @@ class Level:
         player.rect.x += player.direction.x * player.speed
 
         for sprite in self.terrain_tiles.sprites():
-            if sprite.rect.colliderect(Player.rect):
-                if Player.direction.x < 0:
-                    Player.rect.left = sprite.rect.right
-                if Player.direction.x > 0:
-                    Player.rect.right = sprite.rect.left
+            if sprite.rect.colliderect(player.rect):
+                if player.direction.x < 0:
+                    player.rect.left = sprite.rect.right
+                if player.direction.x > 0:
+                    player.rect.right = sprite.rect.left
 
     def vertical_movement_collision(self):
         player = self.player.sprite
         player.apply_gravity()
 
         for sprite in self.terrain_tiles.sprites():
-            if sprite.rect.colliderect(Player.rect):
-                if Player.direction.y > 0:
-                    Player.rect.bottom = sprite.rect.top
-                    Player.direction.y = 0
-                    Player.on_ground = True
-                elif Player.direction.y < 0:
-                    Player.rect.top = sprite.rect.bottom
-                    Player.direction.y = 0
+            if sprite.rect.colliderect(player.rect):
+                if player.direction.y > 0:
+                    player.rect.bottom = sprite.rect.top
+                    player.direction.y = 0
+                    player.on_ground = True
+                elif player.direction.y < 0:
+                    player.rect.top = sprite.rect.bottom
+                    player.direction.y = 0
 
     def run(self):
         self.player.update()
