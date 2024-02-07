@@ -7,7 +7,7 @@ screen: pygame.Surface = pygame.display.set_mode((screen_width, screen_height))
 clock: pygame.time.Clock = pygame.time.Clock()
 
 level: Level = Level(level_map, screen)
-bg_surf: pygame.Surface = pygame.image.load('PályaLétrehozása/img/BG.png').convert_alpha()
+bg_surf: pygame.Surface = pygame.image.load('../img/BG.png').convert_alpha()
 bg_rect: pygame.Rect = bg_surf.get_rect(bottomleft=(0, screen_height))
 
 running: bool = True
