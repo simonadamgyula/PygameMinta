@@ -17,7 +17,7 @@ while running:
             running = False
 
     screen.blit(bg_surf, bg_rect)
-    level.run()
+    level.futtatás()
 
     pygame.display.update()
     clock.tick(60)
