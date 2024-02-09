@@ -11,4 +11,4 @@ class Tile(pygame.sprite.Sprite):
 class TerrainTile(Tile):
     def __init__(self, size: int, x: int, y: int, terrain_type: str):
         super().__init__(size, x, y)
-        self.image: pygame.Surface = pygame.image.load(f'../img/terrain/{terrain_type}.png').convert_alpha()
+        self.image: pygame.Surface = pygame.image.load(f'./img/terrain/{terrain_type}.png').convert_alpha()
