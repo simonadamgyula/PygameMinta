@@ -1,4 +1,5 @@
-{
+{   
+    "python.analysis.typeCheckingMode": "basic",
     "pylint.args": [
         "--disable=missing-module-docstring",
         "--disable=missing-class-docstring",
